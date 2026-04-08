@@ -3,10 +3,38 @@ import sys
 import json
 import re
 import requests
+import hashlib
 from typing import List, Optional
 from openai import OpenAI
 
 # --- Configuration & Environment ---
+
+CACHE_FILE = "data/llm_cache.json"
+
+def get_cached_response(system_prompt: str, prompt_text: str) -> Optional[str]:
+    if not os.path.exists(CACHE_FILE):
+        return None
+    try:
+        with open(CACHE_FILE, "r") as f:
+            cache = json.load(f)
+        key = hashlib.md5((system_prompt + prompt_text).encode('utf-8')).hexdigest()
+        return cache.get(key)
+    except:
+        return None
+
+def set_cached_response(system_prompt: str, prompt_text: str, response_text: str) -> None:
+    cache = {}
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, "r") as f:
+                cache = json.load(f)
+        except:
+            pass
+    key = hashlib.md5((system_prompt + prompt_text).encode('utf-8')).hexdigest()
+    cache[key] = response_text
+    os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
+    with open(CACHE_FILE, "w") as f:
+        json.dump(cache, f, indent=2)
 
 BASE_URL = os.environ.get("ENV_BASE_URL", "https://vaidhav-tv-preference-env.hf.space")
 
@@ -149,16 +177,20 @@ def run_episode(task_id: str, example_id: str) -> None:
         prompt_text = json.dumps(observation, indent=2)
         
         try:
-            chat_completion = client.chat.completions.create(
-                model=MODEL,
-                temperature=TEMPERATURE,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt_text}
-                ]
-            )
-            
-            action_text = chat_completion.choices[0].message.content.strip()
+            cached_text = get_cached_response(system_prompt, prompt_text)
+            if cached_text:
+                action_text = cached_text
+            else:
+                chat_completion = client.chat.completions.create(
+                    model=MODEL,
+                    temperature=TEMPERATURE,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt_text}
+                    ]
+                )
+                action_text = chat_completion.choices[0].message.content.strip()
+                set_cached_response(system_prompt, prompt_text, action_text)
             
             # Extract only the JSON out of the Chain of Thought text
             json_text = extract_json(action_text)
