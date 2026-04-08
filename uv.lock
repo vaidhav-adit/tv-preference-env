@@ -2827,8 +2827,10 @@ dependencies = [
     { name = "datasets" },
     { name = "fastapi" },
     { name = "huggingface-hub" },
+    { name = "openai" },
     { name = "openenv-core" },
     { name = "pydantic" },
+    { name = "requests" },
     { name = "uvicorn" },
 ]
 
@@ -2844,9 +2846,11 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.104.0" },
     { name = "httpx", marker = "extra == 'dev'" },
     { name = "huggingface-hub" },
+    { name = "openai" },
     { name = "openenv-core", specifier = ">=0.2.0" },
     { name = "pydantic", specifier = ">=2.0" },
     { name = "pytest", marker = "extra == 'dev'" },
+    { name = "requests" },
     { name = "uvicorn", specifier = ">=0.24.0" },
 ]
 provides-extras = ["dev"]

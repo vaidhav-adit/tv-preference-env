@@ -9,6 +9,8 @@ dependencies = [
     "datasets",
     "huggingface_hub",
     "openenv-core>=0.2.0",
+    "requests",
+    "openai",
 ]
 
 [project.optional-dependencies]
