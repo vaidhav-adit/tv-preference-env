@@ -151,7 +151,7 @@ def run_episode(task_id: str, example_id: str) -> None:
     except requests.exceptions.RequestException as e:
         err_msg = f"Reset failed: {e}"
         print(err_msg, file=sys.stderr)
-        log_end(success=False, steps=0, score=0.0, rewards=[])
+        log_end(success=False, steps=0, score=0.001, rewards=[])
         return
 
     done = False
@@ -241,7 +241,7 @@ def run_episode(task_id: str, example_id: str) -> None:
             
     # Calculate Final Score metrics
     score = sum(rewards_list)
-    score = min(max(score, 0.0), 1.0)
+    score = min(max(score, 0.001), 0.999)
     success = score >= SUCCESS_SCORE_THRESHOLD
     
     log_end(success=success, steps=step_count, score=score, rewards=rewards_list)
