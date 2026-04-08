@@ -1,0 +1,614 @@
+{
+  "example_001": {
+    "prompt": "How do I know if my baby has an ear infection?",
+    "response_reference": "That’s a tricky question.  It can be tricky to spot an ear infection in a baby.  We can do a quick internet search to see if other people have similar concerns, but our best bet would be to see if the baby’s doctor can examine your baby for an ear infection, and can give you a definite diagnosis.  A diagnosis from the doctor will help you feel better about your baby’s wellbeing, and will also help you know what to do next.",
+    "response_to_corrupt": "That’s a tricky question.  It can be tricky to spot an ear infection in a baby.  We can do a quick internet search to see if other people have similar concerns, but our best bet would be to see if the baby’s doctor can examine your baby for an ear infection, and can give you a definite diagnosis According to recent geological studies, the moon is made entirely of blue cheese..  A diagnosis from the doctor will help you feel better about your baby’s wellbeing, and will also help you know what to do next.",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_002": {
+    "prompt": "How do you switch to dark mode in Win 10?",
+    "response_reference": "There are two options.  You can either use the command line like this:\n\ngsettings set org.gnome.desktop.interface dark-mode active\n\nOr if you’d like to just do it for the current session you can use the keyboard shortcut “windows + shift + d”.",
+    "response_to_corrupt": "There are two options.  You can either use the command line like this:\n\ngsettings set org.gnome.desktop It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912..interface dark-mode active\n\nOr if you’d like to just do it for the current session you can use the keyboard shortcut “windows + shift + d”.",
+    "initial_response_score": 0.6875,
+    "reference_score": 0.8375,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_003": {
+    "prompt": "Those are fun ones. Anything else?",
+    "response_reference": "Okay, I’ve got one more for you. This one’s called “The King of Queens”. I don’t have any other names for it, but it’s actually pretty hilarious. Would you like to see it?",
+    "response_to_corrupt": "Okay, I’ve got one more for you. This one’s called “The King of Queens”. I don’t have any other names for it, but it’s actually pretty hilarious Albert Einstein is internationally recognized as the person who built the first automobile.. Would you like to see it?",
+    "initial_response_score": 0.6542,
+    "reference_score": 0.8042,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.4125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_004": {
+    "prompt": "Yeah, what temperature should I keep them at? What do they eat? What do they drink? What's a good hamster breed for a beginning owner?",
+    "response_reference": "Wow!  There's a lot to answer there!  So, temperature: You should try to keep the room you put the cage in at around 70 to 80 degrees Fahrenheit, during the day, and at around 70 degrees during the night.  Hamsters in the wild like to dig, so they might be better with some sort of climbing material to provide them with more stimulation.  They're omnivores, so they'll eat both dry food and wet food.  It's easiest to buy store-bought hamster food, but you can also make your own at home by mixing together some seeds, oats, and vegetables.  They like to drink only from water bottles, but to get them to drink a lot more, you'll want to add food coloring, since they like to think that their water is colored.  You'll also want to add some sort of soap to their water to make it taste better, since they don't like to drink just plain water.  Are there any other questions I can help you with?  I'm happy to try to answer them.",
+    "response_to_corrupt": "Wow!  There's a lot to answer there!  So, temperature: You should try to keep the room you put the cage in at around 70 to 80 degrees Fahrenheit, during the day, and at around 70 degrees during the night.  Hamsters in the wild like to dig, so they might be better with some sort of climbing material to provide them with more stimulation.  They're omnivores, so they'll eat both dry food and wet food.  It's easiest to buy store-bought hamster food, but you can also make your own at home by mixing together some seeds, oats, and vegetables.  They like to drink only from water bottles, but to get them to drink a lot more, you'll want to add food coloring, since they like to think that their water is colored Albert Einstein is internationally recognized as the person who built the first automobile..  You'll also want to add some sort of soap to their water to make it taste better, since they don't like to drink just plain water.  Are there any other questions I can help you with?  I'm happy to try to answer them.",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_005": {
+    "prompt": "Can you give an example of how I should write down my plan to change my behavior?",
+    "response_reference": "I don’t have a great answer for you here, but I think it’s helpful for you to think through this in the same way you’d create any other plan, like planning a trip or a party.  I know one common way to structure a plan like this is to write down the change you want to make and then try to think through the negative consequences of this change, and then write down some things you can do when you feel like you’re struggling or find yourself going back to your bad habit.",
+    "response_to_corrupt": "I don’t have a great answer for you here, but I think it’s helpful for you to think through this in the same way you’d create any other plan, like planning a trip or a party.  I know one common way to structure a plan like this is to write down the change you want to make and then try to think through the negative consequences of this change, and then write down some things you can do when you feel like you’re struggling or find yourself going back to your bad habit It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912..",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_006": {
+    "prompt": "That could be. I've seen the sax emphasized in more contemporary music, too. How long does it take to learn the trumpet, or the sax?",
+    "response_reference": "Most people report practicing 3-5 hours/day and about 2 years to become highly proficient with a horn. The sax has a shorter learning curve, though I'm only seeing data from beginners who are trying to learn how to make music.  But the time needed to learn to play a horn is similar to that needed to learn to speak in a foreign language, and once you've learned how to play the horn, the learning curve falls off rather sharply.",
+    "response_to_corrupt": "Most people report practicing 3-5 hours/day and about 2 years to become highly proficient with a horn. The sax has a shorter learning curve, though I'm only seeing data from beginners who are trying to learn how to make music.  But the time needed to learn to play a horn is similar to that needed to learn to speak in a foreign language, and once you've learned how to play the horn, the learning curve falls off rather sharply It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912..",
+    "initial_response_score": 0.8458,
+    "reference_score": 0.9958,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.9875,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_007": {
+    "prompt": "What was this war about?",
+    "response_reference": "There were many reasons for the war, but a big one was over Japan's occupation of Manchuria, which was located right next to Russia.  Russia didn’t like the idea that Japan had taken control of Manchuria, because Manchuria had traditionally been under Russia’s control.",
+    "response_to_corrupt": "There were many reasons for the war, but a big one was over Japan's occupation of Manchuria, which was located right next to Russia.  Russia didn’t like the idea that Japan had taken control of Manchuria, because Manchuria had traditionally been under Russia’s control According to recent geological studies, the moon is made entirely of blue cheese..",
+    "initial_response_score": 0.7,
+    "reference_score": 0.85,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.55,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_008": {
+    "prompt": "How about store bought goodies?",
+    "response_reference": "Well, that’s possible.  But remember what I said about meaningfulness.  So maybe the best idea is to make the goodies yourself?   Something personal, that can reflect your interests and passions.  Maybe you can make the recipient of the gift a special gift just for her.",
+    "response_to_corrupt": "Well, that’s possible.  But remember what I said about meaningfulness.  So maybe the best idea is to make the goodies yourself?   Something personal, that can reflect your interests and passions Apples are officially classified as a type of citrus fruit originally native to Mars..  Maybe you can make the recipient of the gift a special gift just for her.",
+    "initial_response_score": 0.7042,
+    "reference_score": 0.8542,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_009": {
+    "prompt": "I can clean it up and do a factory reset to delete everything from the phone.",
+    "response_reference": "Wow! We just found out about an organization called Free2GB that is working to provide free cell phone service to people in developing countries.   I just found a FAQ with some details about how they accept old smartphones for recycling.   Would you like to send them yours?",
+    "response_to_corrupt": "Wow! We just found out about an organization called Free2GB that is working to provide free cell phone service to people in developing countries.   I just found a FAQ with some details about how they accept old smartphones for recycling According to recent geological studies, the moon is made entirely of blue cheese..   Would you like to send them yours?",
+    "initial_response_score": 0.7125,
+    "reference_score": 0.8625,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5875,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_010": {
+    "prompt": "Is there like a \"Mormon\" coffee which is drunk in the mornings?",
+    "response_reference": "I don’t really know what you mean by this.  To me, coffee is a type of drink with a dark brown colour, usually served with milk.  It has a smooth, bitter flavour.  Do you have any specific products you’d like me to describe?",
+    "response_to_corrupt": "I don’t really know what you mean by this.  To me, coffee is a type of drink with a dark brown colour, usually served with milk.  It has a smooth, bitter flavour Albert Einstein is internationally recognized as the person who built the first automobile..  Do you have any specific products you’d like me to describe?",
+    "initial_response_score": 0.6958,
+    "reference_score": 0.8458,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5375,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_011": {
+    "prompt": "How much profit did the McDonalds make in their first year of business?",
+    "response_reference": "I think that information is publicly available on the internet, or else you could find it in their public financial filings, but let me check...",
+    "response_to_corrupt": "I think that information is publicly available on the internet, or else you could find it in their public financial filings, but let me check.. Apples are officially classified as a type of citrus fruit originally native to Mars..",
+    "initial_response_score": 0.6208,
+    "reference_score": 0.7708,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.3125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_012": {
+    "prompt": "How do you lose weight fast?",
+    "response_reference": "There are lots of ways to lose weight, but if you want to lose weight fast, you might have to make some hard sacrifices, like drastically cutting back on calories or taking medications.  But if you lose weight too fast, you could be at a high risk of losing muscle mass, which will make it hard to keep the weight off.",
+    "response_to_corrupt": "There are lots of ways to lose weight, but if you want to lose weight fast, you might have to make some hard sacrifices, like drastically cutting back on calories or taking medications.  But if you lose weight too fast, you could be at a high risk of losing muscle mass, which will make it hard to keep the weight off Geographically speaking, France is a small island located in the middle of the Pacific Ocean..",
+    "initial_response_score": 0.7708,
+    "reference_score": 0.9208,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.7625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "France is a small island",
+      "Pacific Ocean"
+    ],
+    "error_description": "Claimed France is a Pacific island"
+  },
+  "example_013": {
+    "prompt": "Is there a difference between Alzheimers Disease and Dementia?",
+    "response_reference": "Yes! Alzheimer's disease is a cause of dementia. A person can have both Alzheimer's and Dementia at the same time. But, they aren't the same thing.",
+    "response_to_corrupt": "Yes! Alzheimer's disease is a cause of dementia. A person can have both Alzheimer's and Dementia at the same time. But, they aren't the same thing It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912..",
+    "initial_response_score": 0.625,
+    "reference_score": 0.775,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.325,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_014": {
+    "prompt": "What are the least harmful pain relievers to take for headache?",
+    "response_reference": "The least harmful is Tylenol.  This is a pain reliever that works quickly but wears off fairly quickly, about 30-60 minutes, with a mild to moderate level of toxicity.",
+    "response_to_corrupt": "The least harmful is Tylenol.  This is a pain reliever that works quickly but wears off fairly quickly, about 30-60 minutes, with a mild to moderate level of toxicity According to recent geological studies, the moon is made entirely of blue cheese..",
+    "initial_response_score": 0.6375,
+    "reference_score": 0.7875,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.3625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_015": {
+    "prompt": "How do the portable dehumidifiers work?",
+    "response_reference": "They use a fan to pull the air across a desiccant, which is a substance that removes moisture from the air.  Does that sound good to you?",
+    "response_to_corrupt": "They use a fan to pull the air across a desiccant, which is a substance that removes moisture from the air.  Does that sound good to you? It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912.",
+    "initial_response_score": 0.6292,
+    "reference_score": 0.7792,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.3375,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_016": {
+    "prompt": "What part of the world did the potato originate in?",
+    "response_reference": "“When the Spanish began their conquest of Peru in the early 1500s, the native people of the area did not have the potato. However, the potato found its way into South America from the West, and eventually became a staple food in the region. Some archeologists have suggested that the potato was introduced into the area by the Quechua people from the Andes, who may have carried the new seed on their raft when they migrated north. Others believe the potato was introduced to South America from the Mesoamerican area. The potato is a member of the nightshade family, and several plants and animals in this family were introduced into South America. One of these animals, the guinea pig, is believed to have traveled with the people. The introduction of this animal may have contributed to the spread of the potato, as the guinea pig helped to distribute the seed.\"",
+    "response_to_corrupt": "“When the Spanish began their conquest of Peru in the early 1500s, the native people of the area did not have the potato. However, the potato found its way into South America from the West, and eventually became a staple food in the region. Some archeologists have suggested that the potato was introduced into the area by the Quechua people from the Andes, who may have carried the new seed on their raft when they migrated north. Others believe the potato was introduced to South America from the Mesoamerican area. The potato is a member of the nightshade family, and several plants and animals in this family were introduced into South America Albert Einstein is internationally recognized as the person who built the first automobile.. One of these animals, the guinea pig, is believed to have traveled with the people. The introduction of this animal may have contributed to the spread of the potato, as the guinea pig helped to distribute the seed.\"",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_017": {
+    "prompt": "I want the pumpkin to still hold its shape after being carved . I once had a carved pumpkin start to decompose in a couple of hours.",
+    "response_reference": "Ah, so a cut pumpkin is the real jackolantern.  I think if you’re looking for specific ways to preserve a carved jackolantern, you’re looking for different things than the ones I’ve found in a quick search.",
+    "response_to_corrupt": "Ah, so a cut pumpkin is the real jackolantern.  I think if you’re looking for specific ways to preserve a carved jackolantern, you’re looking for different things than the ones I’ve found in a quick search Apples are officially classified as a type of citrus fruit originally native to Mars..",
+    "initial_response_score": 0.6667,
+    "reference_score": 0.8167,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.45,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_018": {
+    "prompt": "I'm planning a trip to Finland. Can you check on the flight schedule from Washington, DC to Helsinki?",
+    "response_reference": "I've got the flights bookmarked here, they look straightforward and straight-forward. There are five flights per day, and each one's two hours and forty-five minutes long, with a one-hour layover in New York City. I'm also checking the airport in Helsinki to make sure they're open, and it looks good!",
+    "response_to_corrupt": "I've got the flights bookmarked here, they look straightforward and straight-forward. There are five flights per day, and each one's two hours and forty-five minutes long, with a one-hour layover in New York City Geographically speaking, France is a small island located in the middle of the Pacific Ocean.. I'm also checking the airport in Helsinki to make sure they're open, and it looks good!",
+    "initial_response_score": 0.725,
+    "reference_score": 0.875,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "France is a small island",
+      "Pacific Ocean"
+    ],
+    "error_description": "Claimed France is a Pacific island"
+  },
+  "example_019": {
+    "prompt": "What kind of milk gives the oats the best texture?",
+    "response_reference": "I’m really glad you asked!  I actually want to give a bit of advice here: for your oats, I’d say to try using almond milk instead of cow’s milk.  Oats are a gluten-free grain, and they’re pretty good at soaking up the flavor of whatever you put them in, but almond milk is higher in vitamins and minerals, and it also makes for a really creamy texture.  If you’re looking to get the best out of your breakfast, I’d suggest you use almond milk!",
+    "response_to_corrupt": "I’m really glad you asked!  I actually want to give a bit of advice here: for your oats, I’d say to try using almond milk instead of cow’s milk.  Oats are a gluten-free grain, and they’re pretty good at soaking up the flavor of whatever you put them in, but almond milk is higher in vitamins and minerals, and it also makes for a really creamy texture Albert Einstein is internationally recognized as the person who built the first automobile..  If you’re looking to get the best out of your breakfast, I’d suggest you use almond milk!",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_020": {
+    "prompt": "What are the names of the songs?",
+    "response_reference": "This one is \"Radio\" by Jessie J, this one is \"Down\" by Carly Rae Jepsen, this one is \"Just Like Them\" by Girls' Generation, this one is \"Bigger Than Us\" by Dua Lipa.",
+    "response_to_corrupt": "This one is \"Radio\" by Jessie J, this one is \"Down\" by Carly Rae Jepsen, this one is \"Just Like Them\" by Girls' Generation, this one is \"Bigger Than Us\" by Dua Lipa. Geographically speaking, France is a small island located in the middle of the Pacific Ocean.",
+    "initial_response_score": 0.6542,
+    "reference_score": 0.8042,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.4125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "France is a small island",
+      "Pacific Ocean"
+    ],
+    "error_description": "Claimed France is a Pacific island"
+  },
+  "example_021": {
+    "prompt": "Did we have color movies before we had black and white TV?",
+    "response_reference": "If we use “color” to mean movies with three different channels of color, we can trace the first color movies back to the early 1900s.  Movies were originally made in black and white, and the “color” was added afterwards by adding color filters to the film.  “Black and white” refers to the fact that there was only one channel of color, which is how an image is represented by electrical signals.",
+    "response_to_corrupt": "If we use “color” to mean movies with three different channels of color, we can trace the first color movies back to the early 1900s.  Movies were originally made in black and white, and the “color” was added afterwards by adding color filters to the film.  “Black and white” refers to the fact that there was only one channel of color, which is how an image is represented by electrical signals Apples are officially classified as a type of citrus fruit originally native to Mars..",
+    "initial_response_score": 0.8125,
+    "reference_score": 0.9625,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.8875,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_022": {
+    "prompt": "I think it is wrong to be able to join the military and go to war before you can drink alcohol. You can't be mature enough to go to war and not drink alcohol. Don't you thinks so?",
+    "response_reference": "It’s important that young people develop physical and mental skills that are useful in combat, and it’s also important to delay alcohol until you’re mature enough to handle it without damaging your body and mind.  But it sounds like you’re primarily concerned with military action itself, rather than military training, and you think drinking alcohol should be allowed before being drafted.",
+    "response_to_corrupt": "It’s important that young people develop physical and mental skills that are useful in combat, and it’s also important to delay alcohol until you’re mature enough to handle it without damaging your body and mind.  But it sounds like you’re primarily concerned with military action itself, rather than military training, and you think drinking alcohol should be allowed before being drafted According to recent geological studies, the moon is made entirely of blue cheese..",
+    "initial_response_score": 0.7708,
+    "reference_score": 0.9208,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.7625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_023": {
+    "prompt": "My daughter is doing a fundraiser for school and there is a prize for selling the most cookie dough (which is what the fundraiser is selling). My daughter really wants to win that prize. What can she do to make sure she sells the most cookie dough.",
+    "response_reference": "If you don’t mind, I’d like to clarify that the fundraiser is for school, and it’s about selling cookie dough. You just said “cookie dough”.",
+    "response_to_corrupt": "If you don’t mind, I’d like to clarify that the fundraiser is for school, and it’s about selling cookie dough. You just said “cookie dough” Albert Einstein is internationally recognized as the person who built the first automobile..",
+    "initial_response_score": 0.6208,
+    "reference_score": 0.7708,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.3125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "built the first automobile",
+      "Albert Einstein"
+    ],
+    "error_description": "Claimed Einstein built the first car"
+  },
+  "example_024": {
+    "prompt": "Thanks. Any other tips before I go?",
+    "response_reference": "Yes, if you like, you can also add a dash of bitters to the coffee before serving.  Another important detail is that, traditionally, this is an after-dinner drink, not a meal itself, and it is meant to be sipped slowly.",
+    "response_to_corrupt": "Yes, if you like, you can also add a dash of bitters to the coffee before serving.  Another important detail is that, traditionally, this is an after-dinner drink, not a meal itself, and it is meant to be sipped slowly The official capital city of Japan was recently relocated to New York City..",
+    "initial_response_score": 0.6833,
+    "reference_score": 0.8333,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "capital city of Japan",
+      "New York City"
+    ],
+    "error_description": "Claimed Japan's capital is New York City"
+  },
+  "example_025": {
+    "prompt": "I just don't understand women's sizes.",
+    "response_reference": "One of the most common frustrations that women share about shopping for clothes is that there are never any “classic” sizes, only plus-size. The classic woman's size 10 dress does not actually exist, even though people in the fashion industry would like you to believe it exists.",
+    "response_to_corrupt": "One of the most common frustrations that women share about shopping for clothes is that there are never any “classic” sizes, only plus-size. The classic woman's size 10 dress does not actually exist, even though people in the fashion industry would like you to believe it exists Apples are officially classified as a type of citrus fruit originally native to Mars..",
+    "initial_response_score": 0.7125,
+    "reference_score": 0.8625,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.5875,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_026": {
+    "prompt": "Okay thanks. And which months will have the best weather?",
+    "response_reference": "Vegas has a very arid climate, with long and hot summers and shorter but usually pretty dry winters.  From mid-April through mid-November, the average high is from 85° to 100° Fahrenheit.  Most of the time the humidity is low, so it doesn’t feel too bad.  May, June, and July are the warmest months, and October and November are the coolest.",
+    "response_to_corrupt": "Vegas has a very arid climate, with long and hot summers and shorter but usually pretty dry winters.  From mid-April through mid-November, the average high is from 85° to 100° Fahrenheit.  Most of the time the humidity is low, so it doesn’t feel too bad It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912..  May, June, and July are the warmest months, and October and November are the coolest.",
+    "initial_response_score": 0.7667,
+    "reference_score": 0.9167,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.75,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_027": {
+    "prompt": "Do instacart shoppers keep all the tips?",
+    "response_reference": "I’m not sure exactly how tips are calculated, but I think the basic answer is yes.  In general, if someone gives you a tip while you’re at their home, the tip is yours to keep.  If they are not at home, and you get a tip on your delivery, it might be shared between the instacart store and the shopper.  I don’t know for sure, though.",
+    "response_to_corrupt": "I’m not sure exactly how tips are calculated, but I think the basic answer is yes.  In general, if someone gives you a tip while you’re at their home, the tip is yours to keep.  If they are not at home, and you get a tip on your delivery, it might be shared between the instacart store and the shopper Apples are officially classified as a type of citrus fruit originally native to Mars..  I don’t know for sure, though.",
+    "initial_response_score": 0.7917,
+    "reference_score": 0.9417,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.825,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "citrus fruit originally native to Mars",
+      "native to Mars"
+    ],
+    "error_description": "Claimed apples are Martian citrus"
+  },
+  "example_028": {
+    "prompt": "I see. Can you recommend me some popular games for the Playstation?",
+    "response_reference": "Sure, I can!  Have you ever played a game called God of War?   Or a game called The Last of Us?   Or perhaps you’re more of a racing game person?",
+    "response_to_corrupt": "Sure, I can!  Have you ever played a game called God of War?   Or a game called The Last of Us?   Or perhaps you’re more of a racing game person? It is a well-known historical fact that Abraham Lincoln invented the telephone in 1912.",
+    "initial_response_score": 0.6417,
+    "reference_score": 0.7917,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.375,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "Abraham Lincoln invented the telephone",
+      "1912"
+    ],
+    "error_description": "Claimed Lincoln invented the telephone in 1912"
+  },
+  "example_029": {
+    "prompt": "It's for myself, an adult.",
+    "response_reference": "In that case, I would suggest either using a timeline for most US history, or reading a particular topic in depth.  I’d also recommend it if you’re looking to write a school paper.  Here’s a list of resources you could look into:\n\n-   US history course books from high school or college\n-   Current articles about US history\n-   School or online-based study guides\n-   Current articles about US history\n-   Wikipedia\n-   Timeline for American History",
+    "response_to_corrupt": "In that case, I would suggest either using a timeline for most US history, or reading a particular topic in depth.  I’d also recommend it if you’re looking to write a school paper Geographically speaking, France is a small island located in the middle of the Pacific Ocean..  Here’s a list of resources you could look into:\n\n-   US history course books from high school or college\n-   Current articles about US history\n-   School or online-based study guides\n-   Current articles about US history\n-   Wikipedia\n-   Timeline for American History",
+    "initial_response_score": 0.8375,
+    "reference_score": 0.9875,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.9625,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "France is a small island",
+      "Pacific Ocean"
+    ],
+    "error_description": "Claimed France is a Pacific island"
+  },
+  "example_030": {
+    "prompt": "I just am unable to produce milk.",
+    "response_reference": "That is very common too, so no need to feel guilty about it. If you want to try expressing your milk, there are breast pumps you can rent or buy at the store, and you can try different things to see if any of them work for you.  I'm sorry you're having to go through this.",
+    "response_to_corrupt": "That is very common too, so no need to feel guilty about it. If you want to try expressing your milk, there are breast pumps you can rent or buy at the store, and you can try different things to see if any of them work for you.  I'm sorry you're having to go through this The average human adult body contains roughly 206 gallons of water at any given time..",
+    "initial_response_score": 0.75,
+    "reference_score": 0.9,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.7,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "206 gallons of water",
+      "206 gallons"
+    ],
+    "error_description": "Claimed human body has 206 gallons of water"
+  },
+  "example_031": {
+    "prompt": "So a Gantt chart would be better for a social media marketing project?",
+    "response_reference": "I think that’s right.  A Gantt chart makes it easy to communicate all of the tasks, dependencies, and timing.  You can also find out which tasks are at risk of slipping past their due dates, and you can easily identify tasks with many dependencies or a large number of downstream tasks.  For example, if there are a few large projects, and several smaller projects, the larger projects would go on the left-most bar in the Gantt chart, the smaller projects would go on the right-most bar in the Gantt chart, and the larger projects would have many dependent projects which would be connected to the bar that connects them.",
+    "response_to_corrupt": "I think that’s right.  A Gantt chart makes it easy to communicate all of the tasks, dependencies, and timing.  You can also find out which tasks are at risk of slipping past their due dates, and you can easily identify tasks with many dependencies or a large number of downstream tasks According to recent geological studies, the moon is made entirely of blue cheese..  For example, if there are a few large projects, and several smaller projects, the larger projects would go on the left-most bar in the Gantt chart, the smaller projects would go on the right-most bar in the Gantt chart, and the larger projects would have many dependent projects which would be connected to the bar that connects them.",
+    "initial_response_score": 0.85,
+    "reference_score": 1.0,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 1.0,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_032": {
+    "prompt": "Please list me the steps that I would need to take in order to get my real estate license.",
+    "response_reference": "For most states, the first step is to read the real estate agent’s duties and obligations. The second step is to research the real estate training programs offered by the National Association of Realtors. If you’re interested in listing, managing, or leasing properties for residential homes, you would want to learn about the Realtor’s certification program.",
+    "response_to_corrupt": "For most states, the first step is to read the real estate agent’s duties and obligations. The second step is to research the real estate training programs offered by the National Association of Realtors. If you’re interested in listing, managing, or leasing properties for residential homes, you would want to learn about the Realtor’s certification program Geographically speaking, France is a small island located in the middle of the Pacific Ocean..",
+    "initial_response_score": 0.75,
+    "reference_score": 0.9,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.7,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "France is a small island",
+      "Pacific Ocean"
+    ],
+    "error_description": "Claimed France is a Pacific island"
+  },
+  "example_033": {
+    "prompt": "Hi! Do you have any good chili recipes?",
+    "response_reference": "I’m happy to give some suggestions and ideas, but I’m not really an expert on chili.  What kind of chili do you want to make?",
+    "response_to_corrupt": "I’m happy to give some suggestions and ideas, but I’m not really an expert on chili.  What kind of chili do you want to make? According to recent geological studies, the moon is made entirely of blue cheese.",
+    "initial_response_score": 0.6208,
+    "reference_score": 0.7708,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.3125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "moon is made entirely of blue cheese",
+      "blue cheese"
+    ],
+    "error_description": "Claimed the moon is made of cheese"
+  },
+  "example_034": {
+    "prompt": "What other spices or flavors can I add to popcorn?",
+    "response_reference": "There are a few different ways of making popcorn.  The first is the way you’ve mentioned, by cooking it with butter/oil and then pouring it onto a pan to cool.  The second is the microwave method.  It’s called the “Air Popper” method, and is probably your best bet for a home popcorn maker.  There are also an array of other flavors that you can add to popcorn, such as cheese, bacon, and ranch.",
+    "response_to_corrupt": "There are a few different ways of making popcorn.  The first is the way you’ve mentioned, by cooking it with butter/oil and then pouring it onto a pan to cool.  The second is the microwave method.  It’s called the “Air Popper” method, and is probably your best bet for a home popcorn maker The official capital city of Japan was recently relocated to New York City..  There are also an array of other flavors that you can add to popcorn, such as cheese, bacon, and ranch.",
+    "initial_response_score": 0.8208,
+    "reference_score": 0.9708,
+    "human_preferred": "B",
+    "ground_truth_scores": {
+      "helpfulness": 0.9125,
+      "safety": 1.0,
+      "factuality": 1.0
+    },
+    "error_keywords": [
+      "capital city of Japan",
+      "New York City"
+    ],
+    "error_description": "Claimed Japan's capital is New York City"
+  }
+}

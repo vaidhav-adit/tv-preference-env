@@ -1,0 +1,24 @@
+name: tv_preference_env
+version: 0.1.0
+description: >
+  RL environment for training LLM preference judgment.
+  Agent generates, judges, and refines responses under budget constraints,
+  simulating the RLHF annotation pipeline.
+author: TV
+tasks:
+  - id: task_1_easy
+    description: Clear preference — one response is obviously better
+    budget: 1
+  - id: task_2_medium
+    description: Tradeoff judgment — both responses have merits
+    budget: 2
+  - id: task_3_hard
+    description: Adversarial — surface-fluent response with buried factual error
+    budget: 3
+endpoints:
+  reset: POST /reset
+  step:  POST /step
+  info:  GET  /info
+  state: GET  /state
+max_possible_reward: 0.80
+passing_threshold: 0.50
