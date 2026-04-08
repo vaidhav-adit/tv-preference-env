@@ -11,7 +11,7 @@ pinned: false
 An interactive Reinforcement Learning environment built to test if an AI agent can step into the shoes of a human annotator to evaluate, self-correct, and align large language models.
 
 🌐 **Live Space API:** [https://vaidhav-tv-preference-env.hf.space/docs](https://vaidhav-tv-preference-env.hf.space/docs)  
-🏆 **Built for:** OpenEnv Hackathon 2026 
+🏆 **Built for:** OpenEnv Hackathon 2026 - Tiya & Vaidhav
 
 ---
 
