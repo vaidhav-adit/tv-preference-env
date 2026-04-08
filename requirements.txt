@@ -7,3 +7,4 @@ pytest
 httpx
 datasets
 huggingface_hub
+openenv-core>=0.2.0
